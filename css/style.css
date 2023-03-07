@@ -1,0 +1,392 @@
+/* GENERAL */
+body {
+   box-sizing: border-box;
+}
+
+p {
+   color: var(--clr-gray);
+}
+
+i {
+   font-size: 3rem;
+}
+
+:root {
+   --fs-h1: 4.5rem;
+   --fs-large: 3rem;
+   --fs-md: 2.5rem;
+   --fs-sm: 2rem;
+   --fs-xs: 1.5rem;
+   --fw-600: 600;
+   --clr-gray: #4e4e4e;
+
+}
+
+/* Nav-bar */
+.logo a {
+   font-size: 28px;
+   color: white;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+.nav-links a {
+   font-size: 16px;
+   font-weight: 600;
+   color: white;
+   letter-spacing: 0.4px;
+
+}
+
+.nav-item .uline::before {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: #fff;
+   bottom: 5px;
+   left: 1;
+   visibility: hidden;
+   transition: all 0.3s ease-in-out 0s;
+
+}
+
+.nav-item:hover .uline::before {
+   width: 50%;
+   visibility: visible;
+
+}
+
+
+/* Home Section */
+.layer {
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 100%;
+   height: 100%;
+}
+
+.home {
+   background-image: url(../img/hero-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   text-align: center;
+}
+
+
+.home h1 {
+   font-size: var(--fs-h1);
+   font-weight: var(--fw-600);
+
+}
+
+.typing::after {
+   content: " ";
+   color: white;
+   font-size: var(--fs-md);
+   font-weight: var(--fw-600);
+   animation: typing 5s infinite ease;
+}
+
+.arrow-up {
+   width: 40px;
+   height: 40px;
+}
+
+@keyframes typing {
+   0% {
+      content: " |"
+   }
+
+   4% {
+      content: " I|"
+   }
+
+   8% {
+      content: " Ib|"
+   }
+
+   12% {
+      content: " Ibr|"
+   }
+
+   16% {
+      content: " Ibra|"
+   }
+
+   20% {
+      content: " Ibrah|"
+   }
+
+   24% {
+      content: " Ibrahi|"
+   }
+
+   28% {
+      content: " Ibrahim|"
+   }
+
+   32% {
+      content: " Ibrahim|"
+   }
+
+   36% {
+      content: " Ibrahim |"
+   }
+
+   40% {
+      content: " Ibrahim O|"
+   }
+
+   44% {
+      content: " Ibrahim Om|"
+   }
+
+   48% {
+      content: " Ibrahim Oma|"
+   }
+
+   52% {
+      content: " Ibrahim Omar.|"
+   }
+
+
+   56% {
+      content: " Ibrahim Oma|"
+   }
+
+   60% {
+      content: " Ibrahim Om|"
+   }
+
+   64% {
+      content: " Ibrahim O|"
+   }
+
+   68% {
+      content: " Ibrahim |"
+   }
+
+   72% {
+      content: " Ibrahim|"
+   }
+
+   76% {
+      content: " Ibrahi|"
+   }
+
+   80% {
+      content: " Ibrah|"
+   }
+
+   84% {
+      content: " Ibra|"
+   }
+
+   88% {
+      content: " Ibr|"
+   }
+
+   92% {
+      content: " Ib|"
+   }
+
+   96% {
+      content: " I|"
+   }
+
+   100% {
+      content: " |"
+   }
+}
+
+/* about section */
+.title-s {
+   display: inline-block;
+   font-weight: 600;
+   color: #1e1e1e;
+   font-size: 1.1rem;
+   width: 55px;
+}
+
+span {
+   color: var(--clr-gray);
+   text-transform: capitalize;
+}
+
+/* SKILLS SECTION */
+.skill p {
+   color: var(--clr-gray);
+}
+
+/* ABOUT ME SECTION */
+.title-box h5 {
+   font-size: var(--fs-sm);
+   position: relative;
+
+}
+
+.title-box h5::before {
+   content: "";
+   position: absolute;
+   height: 3px;
+   background-color: #0078ff;
+   width: 100px;
+   bottom: -12px;
+}
+
+.lead {
+   color: var(--clr-gray);
+}
+
+/* SERVICES SECTION */
+.title h3 {
+   font-size: var(--fs-large);
+}
+
+.line {
+   width: 40px;
+   height: 5px;
+   background-color: #0078ff;
+   margin: 0 auto;
+   border-radius: 5px;
+}
+
+/* SERVICES ITEMS */
+.services .icon-container {
+   width: 130px;
+   height: 130px;
+   border: 10px solid #0077ff;
+   border-radius: 50%;
+   transition: all 0.5s;
+}
+
+.card:hover .icon-container {
+   border-color: #afd4ff;
+   background-color: #0077ff;
+   color: white;
+}
+
+.card-title {
+   font-size: var(--fs-xs);
+}
+
+/* COUNTER SECTION */
+.blue-layer {
+   background-color: rgba(0, 120, 255, 0.6);
+   width: 100%;
+   height: 100%;
+}
+
+.counter {
+   background-image: url(../img/counters-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+.counter .icon-container {
+   width: 100px;
+   height: 100px;
+   border: 10px solid #e4e4e4;
+   border-radius: 50%;
+   transition: all 0.5s;
+}
+
+.count p {
+   font-size: var(--fs-sm);
+}
+
+/* PORTFOLIO SECTION */
+.portfolio .card img {
+   transition: all 1s;
+}
+
+.portfolio .card:hover img {
+   transform: scale(1.3);
+}
+
+/* SLIDER SECTION */
+.slider {
+   background-image: url(../img/overlay-bg.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+.slider-img {
+   width: 150px;
+   height: 150px;
+}
+
+.slider-caption h5 {
+   font-size: var(--fs-xs);
+}
+
+/* BLOG SECTION */
+.blog .card-img::after {
+   content: "Travel";
+   color: white;
+   background-color: #0077ff;
+   padding: 5px 15px;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 0;
+   right: 50%;
+   transform: translate(50%, 50%);
+
+}
+
+.blog .card-img2::after {
+   content: "Web Design";
+   color: white;
+   background-color: #0077ff;
+   padding: 5px 15px;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 0;
+   right: 50%;
+   transform: translate(50%, 50%);
+
+}
+
+
+.post-author img {
+   width: 32px;
+   height: 32px;
+   margin-right: 4px;
+}
+
+.post-date i {
+   font-size: 1rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+   background-image: url(../img/overlay-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+.social ul li {
+   height: 45px;
+   width: 45px;
+}
+
+.social ul li span {
+   color: #0078ff;
+}
+
+.social ul li:hover {
+   background-color: #0077ff;
+   transition: all 1s;
+}
+
+.social ul li:hover span {
+   color: white;
+   transition: all 1s;
+}
+
+/* CONTACT SECTION END */
